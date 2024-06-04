@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MentoriaAulaJokenpo</string>
+    <string name="txt_pc_choice">Escolha do App</string>
+    <string name="txt_user_choice">Escolha uma opção abaixo</string>
+    <string name="txt_result">Resultado</string>
+    <string name="img_choice_app">Imagem da escolha do App</string>
+    <string name="img_stone">Imagem pedra</string>
+    <string name="img_paper">Imagem papel</string>
+    <string name="img_scissors">Imagem tesoura</string>
+    <string-array name="resultado">
+        <item>"Você perdeu :("</item>
+        <item>"Você ganhou :)"</item>
+        <item>"Empatamos ;)"</item>
+    </string-array>
+</resources>

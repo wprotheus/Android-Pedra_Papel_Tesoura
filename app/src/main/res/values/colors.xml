@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="win">#03342C</color>
+    <color name="lose">#951616</color>
+    <color name="draw">#F9A825</color>
+    <color name="bck_color">#E3F2FD</color>
+</resources>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bck_color"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:text="@string/txt_pc_choice"
+        android:textColor="@color/material_dynamic_primary20"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivPChoice"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/img_choice_app"
+        android:src="@drawable/padrao"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvPickOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/txt_user_choice"
+        android:textColor="@color/material_dynamic_neutral_variant10"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPChoice" />
+
+    <ImageView
+        android:id="@+id/ivStone"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/img_stone"
+        android:src="@drawable/pedra"
+        app:layout_constraintEnd_toStartOf="@+id/ivPaper"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickOne" />
+
+    <ImageView
+        android:id="@+id/ivPaper"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/img_paper"
+        android:src="@drawable/papel"
+        app:layout_constraintEnd_toStartOf="@+id/ivScissors"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivStone"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickOne" />
+
+    <ImageView
+        android:id="@+id/ivScissors"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:contentDescription="@string/img_scissors"
+        android:src="@drawable/tesoura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivPaper"
+        app:layout_constraintTop_toBottomOf="@+id/tvPickOne" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/txt_result"
+        android:textColor="@color/material_dynamic_neutral10"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPaper" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
